@@ -7,11 +7,10 @@
         если сумма превысила 21, выводит сумму и завершает работу 
 """
 numsum = 0
-while (a := int(input())) and numsum < 21 :
+while numsum < 21 and ( a := int(input() ) ):
     numsum +=a
     if a <= 0:
         print(a)
         break
 else: 
     print(numsum)
-
